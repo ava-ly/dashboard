@@ -71,12 +71,12 @@ export default function TeamsStats() {
           <CardHeader className="pb-2">
             <CardTitle className="text-base">Total teams</CardTitle>
           </CardHeader>
-          <CardContent className="flex justify-between items-center">
+          <CardContent className="flex justify-between items-center flex-wrap gap-2">
             <div className="flex gap-2">
               <UsersIcon />
               <div className="text-5xl font-bold">8</div>
             </div>
-            <div>
+            <div className="flex-shrink-0">
               <Button size="xs" asChild>
                 <Link href="/dashboard/teams">View all</Link>
               </Button>

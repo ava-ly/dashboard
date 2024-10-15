@@ -33,12 +33,12 @@ export default function EmployeesStats() {
           <CardHeader className="pb-2">
             <CardTitle className="text-base">Total employees</CardTitle>
           </CardHeader>
-          <CardContent className="flex justify-between items-center">
+          <CardContent className="flex justify-between items-center flex-wrap gap-2">
             <div className="flex gap-2">
               <UserIcon />
               <div className="text-5xl font-bold">{totalEmployees}</div>
             </div>
-            <div>
+            <div className="flex-shrink-0">
               <Button size="xs" asChild>
                 <Link href="/dashboard/employees">View all</Link>
               </Button>
